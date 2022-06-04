@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Step 1 — clone this repository
 
 ```
-$ git clone https://github.com/rafagabidulin/react-pizza.git
+$ git clone https://github.com/rafagabidulin/test-onpoint.git
 ```
 
 Step 2 — install the dependencies
