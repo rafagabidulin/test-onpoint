@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Slide2.scss';
 import bg from '../../../assets/images/bg.jpg';
 import slide2Img1 from '../../../assets/images/slide2/slide2-img1.png';
@@ -54,6 +55,11 @@ function Slide2() {
       <img className="img slide2__img3 slide2__img3_anim" src={slide2Img2} alt="" />
       <img className="img slide2__img4 slide2__img4_anim" src={slide2Img2} alt="" />
       <img className="img slide2__img5 slide2__img5_anim" src={slide2Img2} alt="" />
+
+      <Link to="/slide3">
+        <button type="button" className="slide2__button"><span className="slide2__button_text">Что дальше?</span></button>
+      </Link>
+
     </section>
   );
 }
