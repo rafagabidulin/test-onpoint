@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('./assets/fonts/gilroy-bold.eot');
+  src: url('./assets/fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/gilroy-bold.woff2') format('woff2'), 
+    url('./assets/fonts/gilroy-bold.woff') format('woff'),
+    url('./assets/fonts/gilroy-bold.ttf') format('truetype'),
+    url('./assets/fonts/gilroy-bold.svg#gilroy-bold') format('svg');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/gilroy-regular.eot');
+  src: url('./assets/fonts/gilroy-regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/gilroy-regular.woff2') format('woff2'),
+    url('./assets/fonts/gilroy-regular.woff') format('woff'),
+    url('./assets/fonts/gilroy-regular.ttf') format('truetype'),
+    url('./assets/fonts/gilroy-regular.svg#gilroy-regular') format('svg');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy';
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+#root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1024px;
+  height: 768px;
+}
