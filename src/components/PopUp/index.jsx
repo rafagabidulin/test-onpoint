@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import classnames from 'classnames';
 import { useEffect, useRef, useState } from 'react';
 import './PopUp.scss';
 
@@ -66,6 +66,9 @@ function PopUp({ setPopUp }) {
     setArr(arrList.slice(0, 3));
     setTrigger('prev');
   }
+  function close() {
+    setPopUp(false);
+  }
 
   return (
     <div ref={refPopUp} className="section__popUp">
@@ -83,17 +86,16 @@ function PopUp({ setPopUp }) {
 
         <div className="nav__btns">
           <img onButtonClick={prev} src={navBtn} alt="navBtn" height="30" width="30" />
-          <div className={cn('nav__circle', { 'active-btn': trigger === 'prev' })} />
-          <div className={cn('nav__circle', { 'active-btn': trigger === 'next' })} />
+          <div className={classnames('nav__circle', { 'active-btn': trigger === 'prev' })} />
+          <div className={classnames('nav__circle', { 'active-btn': trigger === 'next' })} />
           <img onButtonClick={next} src={navBtn} alt="navBtn" height="30" width="30" />
         </div>
 
         <div
-          onButtonClick={() => {
-            setPopUp(false);
-          }}
+          onCloseButtonClick={close}
           className="popUp__close"
         >
+          <p />
           <p />
         </div>
       </div>
