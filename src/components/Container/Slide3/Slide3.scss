@@ -1,4 +1,4 @@
-.slide3__fon {
+.slide3__bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,12 +12,13 @@
 }
 
 .slide3__title {
-  position: absolute;
+  position: fixed;
   left: 32%;
   top: 178px;
   p {
     font-size: 30px;
     text-transform: uppercase;
+    word-spacing: normal;
   }
   h1 {
     margin: 0;

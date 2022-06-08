@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Slide3.scss';
 
 import Button from '../../Button';
+// eslint-disable-next-line import/no-cycle
 import PopUp from '../../PopUp';
 import bottle from '../../../assets/images/slide3/bottle.png';
 import slide3Icon2 from '../../../assets/images/slide3/slide3-icon2.png';
@@ -15,7 +16,7 @@ function Slide3() {
   const [popUp, setPopUp] = useState(false);
   return (
     <section className="container slide3">
-      <img className="slide3__fon" src={bg} alt="" />
+      <img className="slide3__bg" src={bg} alt="" />
       <img className="slide3__bottle" src={bottle} alt="" width={230} />
       <img className="slide3__bubble1 bubble__anim1" src={bubble1} alt="" />
       <img className="slide3__bubble2 bubble__anim2" src={bubble2} alt="" />
@@ -25,7 +26,7 @@ function Slide3() {
 
       {!popUp && (
         <>
-          <Title title="Ключевое сообщения" />
+          <Title title="Ключевое сообщение" />
           <div className="slide3__block">
             <div className="slide3__block_item slide3__block_item1">
               <img src={slide3Icon2} alt="" />
@@ -55,7 +56,7 @@ export function Title({ title }) {
       <p>{title}</p>
       <h1>
         Brend
-        <strong>xy</strong>
+        <span><strong> xy </strong></span>
       </h1>
     </div>
   );

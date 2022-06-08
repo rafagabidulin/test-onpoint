@@ -9,27 +9,27 @@ import navBtn from '../../assets/svg/nav-btn.svg';
 const arrList = [
   {
     num: '01',
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
   },
   {
     num: '02',
-    title: 'Lorem ipsum dolor sit amet consectetur .',
+    title: 'Faucibus pulvinar elementum integer enim',
   },
   {
     num: '03',
-    title: 'Lorem ipsum dolor sit amet .',
+    title: 'Faucibus pulvinar elementum integer enim',
   },
   {
     num: '04',
-    title: 'Lorem ipsum dolor sit amet .',
+    title: 'Mi bibendum neque egestas congue quisque egestas diam',
   },
   {
     num: '05',
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    title: 'Venenatis lectus magna fringilla urna',
   },
   {
     num: '06',
-    title: 'Lorem ipsum dolor sit amet .',
+    title: 'Venenatis lectus magna fringilla urna',
   },
   {
     num: '01',
@@ -73,9 +73,8 @@ function PopUp({ setPopUp }) {
         <Title title="Преимущества" />
 
         <div className="wrapper__list">
-          {arr.map((el, i) => (
-            // eslint-disable-next-line react/no-array-index-key
-            <div className="wrapper__list__item" key={`${i}_${el}`}>
+          {arr.map((el) => (
+            <div className="wrapper__list__item" key={el}>
               <strong className="fade">{el.num}</strong>
               <p>{el.title}</p>
             </div>
@@ -83,14 +82,14 @@ function PopUp({ setPopUp }) {
         </div>
 
         <div className="nav__btns">
-          <img onClick1={prev} src={navBtn} alt="navBtn" height="30" width="30" />
+          <img onButtonClick={prev} src={navBtn} alt="navBtn" height="30" width="30" />
           <div className={cn('nav__circle', { 'active-btn': trigger === 'prev' })} />
           <div className={cn('nav__circle', { 'active-btn': trigger === 'next' })} />
-          <img onClick2={next} src={navBtn} alt="navBtn" height="30" width="30" />
+          <img onButtonClick={next} src={navBtn} alt="navBtn" height="30" width="30" />
         </div>
 
         <div
-          onClick1={() => {
+          onButtonClick={() => {
             setPopUp(false);
           }}
           className="popUp__close"
