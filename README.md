@@ -1,5 +1,7 @@
 [![Actions Status](https://github.com/rafagabidulin/test-onpoint/workflows/linter_status/badge.svg)](https://github.com/rafagabidulin/test-onpoint/actions)
 
+# [DEMO](https://rafagabidulin.github.io/test-onpoint/)
+
 # test-onpoint
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
