@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className="content">
         <Routes>
-          <Route path="/" element={<Slide1 />} />
+          <Route path="/test-onpoint/" element={<Slide1 />} />
           <Route path="/slide2" element={<Slide2 />} />
           <Route path="/slide3" element={<Slide3 />} />
         </Routes>

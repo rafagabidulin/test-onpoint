@@ -6,7 +6,7 @@ import './Header.scss';
 function Header() {
   return (
     <header className="header">
-      <Link to="/test-onpoint">
+      <Link to="/test-onpoint/">
         <Logo />
       </Link>
       <hr />
