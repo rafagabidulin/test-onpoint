@@ -1,4 +1,5 @@
 [![Actions Status](https://github.com/rafagabidulin/test-onpoint/workflows/linter_status/badge.svg)](https://github.com/rafagabidulin/test-onpoint/actions)
+[![pages-build-deployment](https://github.com/rafagabidulin/test-onpoint/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/rafagabidulin/test-onpoint/actions/workflows/pages/pages-build-deployment)
 
 # [DEMO](https://rafagabidulin.github.io/test-onpoint/)
 
