@@ -13,7 +13,7 @@ import bubble3 from '../../../assets/images/slide3/bubble3.png';
 import bg from '../../../assets/images/bg.jpg';
 
 function Slide3() {
-  const [popUp, setPopUp] = useState(true);
+  const [popUp, setPopUp] = useState(false);
   return (
     <section className="container slide3">
       <img className="slide3__bg" src={bg} alt="" />
